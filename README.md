@@ -63,6 +63,7 @@ function showQuote() {
 
 ### Useful resources
 
+-   [Youtube: Elzero Web School - Fetch API](https://www.youtube.com/watch?v=oO0a7tQcGps)
 -   [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 ## Author
