@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+body {
+    font-weight: 800;
+    padding-inline: 20px;
+    font-family: "Manrope", sans-serif;
+    background-color: var(--dark-blue);
+}
+main {
+    max-width: 550px;
+    margin-inline: auto;
+    padding: 30px 50px;
+    position: relative;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--dark-grayish-blue);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+main section #advice-id {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-block: 20px;
+    color: var(--neon-green);
+    letter-spacing: 5px;
+}
+main section #advice-text {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    color: var(--light-cyan);
+}
+main section #advice-text::before {
+    position: relative;
+    right: 3px;
+}
+main section #advice-text::after {
+    position: relative;
+    left: 3px;
+}
+main > img {
+    max-width: 100%;
+    height: 15px;
+    margin-bottom: 25px;
+}
+main > button {
+    position: absolute;
+    bottom: -28px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon-green);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: 100ms ease-in-out;
+    -moz-transition: 100ms ease-in-out;
+    -ms-transition: 100ms ease-in-out;
+    -o-transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
+}
+main > button:hover {
+    box-shadow: 0 0 40px var(--neon-green);
+}
+@media (max-width: 375px) {
+    main {
+        padding: 20px;
+    }
+    main section #advice-id {
+        font-size: 12px;
+    }
+    main section #advice-text {
+        font-size: 22px;
+    }
+}

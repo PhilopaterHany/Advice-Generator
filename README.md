@@ -38,23 +38,32 @@ Users should be able to:
 
 ### Built with
 
--   Semantic HTML5 markup
--   CSS custom properties
+-   Semantic HTML5 Markup
+-   CSS Custom Properties
 -   CSS Flexbox
--   CSS Grid
+-   Vanilla Javascript
+-   Fetch API (ES6)
 
 ### What I learned
 
 ```js
-const proudOfThisFunc = () => {
-    console.log("🎉");
-};
+function showQuote() {
+    fetch("https://api.adviceslip.com/advice")
+        .then((response) => response.json())
+        .then((data) => data.slip)
+        .then((data) => {
+            adviceId.innerHTML = `ADVICE #${data.id}`;
+            adviceText.innerHTML = data.advice;
+        })
+        .catch((error) => {
+            alert(`Error: ${error}`);
+        });
+}
 ```
 
 ### Useful resources
 
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-   [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 ## Author
 
