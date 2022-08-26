@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github Repository](https://github.com/PhilopaterHany/Advice-Generator/)
+-   Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-TVA0_1Ofut/)
 -   Live Site URL: [Github Pages](https://philopaterhany.github.io/Advice-Generator/)
 
 ## My process
